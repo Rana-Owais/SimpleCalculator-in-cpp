@@ -23,7 +23,11 @@ int main() {
             cout << "Result: " << num1 << " * " << num2 << " = " << num1 * num2 << endl;
             break;
         case '/':
-            cout << "Result: " << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+            if (num2 == 0) {
+		cout << "Error!!!!!!! Divide by 0." << endl;
+	}else{
+		cout << "Result: " << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+	}
             break;
         default:
             cout << "Error: Invalid operator chosen!" << endl;
