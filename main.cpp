@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -29,6 +30,8 @@ int main() {
 		cout << "Result: " << num1 << " / " << num2 << " = " << num1 / num2 << endl;
 	}
             break;
+	case '^':
+	    cout << "Result: " << num1 << " ^ " << num2 << " = " << pow(num1, num2) << endl;	
         default:
             cout << "Error: Invalid operator chosen!" << endl;
             break;
